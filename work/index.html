@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleeping Moon</title>
+    
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sleeping Moon</title>
+        <style>
+            canvas {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="moonCanvas" width="400" height="400"></canvas>
+    
+        <script>
+            const canvas = document.getElementById('moonCanvas');
+            const ctx = canvas.getContext('2d');
+    
+            function drawSleepingMoon() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+                // Draw moon body
+                ctx.beginPath();
+                ctx.arc(200, 200, 100, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgb(245, 245, 220)'; // Light yellow
+                ctx.fill();
+                ctx.closePath();
+    
+                // Draw closed eyes
+                ctx.beginPath();
+                ctx.arc(150, 180, 10, 0, Math.PI * 2); // Left eye
+                ctx.arc(250, 180, 10, 0, Math.PI * 2); // Right eye
+                ctx.fillStyle = 'black';
+                ctx.fill();
+                ctx.closePath();
+    
+                // Draw closed mouth
+                ctx.beginPath();
+                ctx.arc(200, 240, 40, 0, Math.PI);
+                ctx.lineWidth = 10;
+                ctx.strokeStyle = 'black';
+                ctx.stroke();
+                ctx.closePath();
+            }
+    
+            drawSleepingMoon();
+        </script>
+    </body>
+    </html>
+    
+</body>
+</html>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
